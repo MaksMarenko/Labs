@@ -10,7 +10,24 @@ namespace Lab2
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("123");
+            double nk = 1.0;
+            int nn = 6;
+            for (int i = 1; i <= nn; i++)
+            {
+                nk *= pow(1.0 + 1.0, i);
+            }
+            Console.WriteLine(nk);
+            Console.WriteLine("Press any key to continue");
+            Console.ReadKey(true);
+        }
+        static double pow(double a, int k)
+        {
+            int p = 1;
+            for (int i = 1; i <= k; i++)
+            {
+                p *= Convert.ToInt32(a);
+            }
+            return p;
         }
     }
 }
