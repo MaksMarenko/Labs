@@ -14,6 +14,7 @@ namespace Lab2
             double nk = 1.0;
             int nn = 6;
             int p = (3 * k + (-1) ^ (k ^ 2 - k + 1) * k) / (2 * k ^ 2 + 1);
+
             for (int i = 1; i <= nn; i++)
             {
                 nk *= pow(1.0 + 1.0, i);

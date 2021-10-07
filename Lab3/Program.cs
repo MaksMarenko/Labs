@@ -12,7 +12,6 @@ namespace Lab3
         {
             int a,i,k,j;
             string s;
- 
             Console.Write("Enter num:");
             a = Convert.ToInt32(Console.ReadLine());
             s = a.ToString();
