@@ -16,6 +16,7 @@ namespace Lab4
             //{
                 //Console.WriteLine(nums[i]);
             //}
+
             Console.WriteLine(pair_unpair(nums, n));
             Console.WriteLine(pos_neg(nums, n));
             Console.ReadKey();
