@@ -23,7 +23,7 @@ namespace Lab3
                     for ( j =i+1; j < k; j++)
                         if (s[i] == s[j])
                         {
-                            Console.Write("There are the same numbers");
+                            Console.Write("False");
                             goto end;
                         }
             }
@@ -33,7 +33,7 @@ namespace Lab3
                 Console.ReadKey();
                 Environment.Exit(1);
             }
-            Console.Write("All numbers are different");
+            Console.Write("True");
             end:
             Console.ReadKey();
         }
