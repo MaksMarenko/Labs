@@ -34,7 +34,7 @@ namespace Lab4
         }
         static int pos_neg(int[] a, int n)
         {
-            for (int i = 1; i < a.Length; i++)
+            for (int i = 1; i < n; i++)
             {
                 if (Math.Sign(a[i]) == Math.Sign(a[i - 1]))
                 {
