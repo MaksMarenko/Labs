@@ -4,34 +4,57 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
+//LAB 2 Варіант 12
+
+//У всіх завданнях даного пункту потрібно вивести логічне значення
+//True, якщо приведений вислів для запропонованих початкових
+//даних є істинним, і значення False у супротивному випадку.Всі
+//числа, для яких вказано кількість цифр (двозначне число, тризначне
+//число і т.д.), вважаються цілими.
+
+//Перевірити істинність вислову: "Всі цифри даного тризначного числа різні".
+
 namespace Lab2
 {
     class Program
     {
         static void Main(string[] args)
         {
-            int k = 0;
-            double nk = 1.0;
-            int nn = 6;
-            int p = (3 * k + (-1) ^ (k ^ 2 - k + 1) * k) / (2 * k ^ 2 + 1);
-
-            for (int i = 1; i <= nn; i++)
+            try
             {
-                nk *= pow(1.0 + 1.0, i);
+                int num = Convert.ToInt32(Console.ReadLine());
+                Console.WriteLine(difnumbers(num));
+                Console.ReadKey();
             }
-            Console.WriteLine(nk);
-            Console.WriteLine("Press any key to continue");
-            Console.ReadKey(true);
+            catch
+            {
+                Console.WriteLine("The entered data is incorrect");
+                Console.ReadKey();
+            }
         }
 
-        static double pow(double a, int k)
+        static bool difnumbers(int num)
         {
-            int p = 1;
-            for (int i = 1; i <= k; i++)
+            if(num.ToString().Length == 3)
             {
-                p *= Convert.ToInt32(a);
+                for(int i = 0; i < num.ToString().Length; i++)
+                {
+                    for(int j = i + 1; j < num.ToString().Length; j++)
+                    {
+                        if(num.ToString()[i] == num.ToString()[j])
+                        {
+                            return false;
+                        }
+                    }
+                }
             }
-            return p;
+            else
+            {
+                Console.WriteLine("The entered data is incorrect");
+                return false;
+            }
+
+            return true;
         }
     }
 }
