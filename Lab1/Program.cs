@@ -4,7 +4,6 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-
 //LAB 1
 //Написати програму, що виконує наступні функції:
 
@@ -17,9 +16,6 @@ using System.Threading.Tasks;
 //4.Реалізувати метод, що буде масив повертати задом навпаки (Використання Array.Reverse() заборонено!)
 
 //5.Виконати пункт 4 з використанням ключових слів ref i out
-
-
-
 
 namespace Lab1
 {
